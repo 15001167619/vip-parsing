@@ -92,20 +92,6 @@ layui.use(['element', 'form', 'layer'], function() {
 		$("#api").append($option);
 	}
 	form.render();
-	
-//	layer.alert(
-//		'因解析接口的影响，部分视频清晰度不佳。',
-//	);
-//	layer.open({
-//		type:1,
-//		title:'小提示',
-//		content:'部分视频可能无法解析，实在不行就放弃吧 :)',
-//		shade:0,
-//		offset:'r'
-//	});
-	
-	
-	
 	$('.play').click(function() {
 		var url = $('.url').val();
 		var api = $('#api').val();
@@ -140,7 +126,6 @@ layui.use(['element', 'form', 'layer'], function() {
 			layer.open({
 				type: 2
 				,title: "播放界面"
-				//,content:['http://api.baiyug.cn/vip/index.php?url=https://v.youku.com/v_show/id_XMzY0NzIwODI3Ng==.html?spm=a2h1n.8251845.0.0','no']
 				,content: [api + url, 'no']
 				,area: ['1060px', '640px']
 				,maxmin: true
@@ -152,12 +137,10 @@ layui.use(['element', 'form', 'layer'], function() {
 		}
 
 	});
-
 	$('.url').on('click',function(){
 		layer.tips('如果视频无法正常播放，请切换解析地址！', 'input', {
 		  tips: [3, '#393D49'],
 		  time: 4000
 		});
 	})
-
 });
