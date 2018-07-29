@@ -1,26 +1,7 @@
 @charset "utf-8";
-body {
-	background-color: #f2f2f2;
-	overflow-x: hidden;
-}
-
-.wrap {
-	margin: 50px auto 50px;
-}
-
-.url {
-	width: 820px;
-}
-
-.video-website {
-	padding: 10px;
-	box-sizing: border-box;
-}
-
-.layui-card {
-	margin: 30px 10px;
-	text-align: center;
-}
-img{
-	margin: 10px auto;
-}
+body {background-color: #f2f2f2;overflow-x: hidden;}
+.wrap {	margin: 50px auto 50px;}
+.url {	width: 820px;}
+.video-website {padding: 10px;box-sizing: border-box;}
+.layui-card {	margin: 30px 10px;	text-align: center;}
+img{	margin: 10px auto;}
