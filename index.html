@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="shortcut icon" href="http://www.easyicon.net/api/resizeApi.php?id=1145431&size=128" />
+		<title>爱奇艺、优酷、腾讯视频在线解析</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header layui-bg-cyan">
+				<div class="layui-container">
+					<div class="layui-logo layui-layout-left"><h3>VIP视频云解析</h3></div>
+					<ul class="layui-nav layui-bg-cyan layui-layout-left" lay-filter="">
+					  <li class="layui-nav-item layui-this"><a href="javascript:;">首页</a></li>
+					  <li class="layui-nav-item help"><a href="help.html">帮助</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="layui-container wrap ">
+				<div class="layui-row">
+					<div class="layui-input-inline layui-form">
+						<select id="api" name="api">
+						  <option value="">请选择解析接口</option>
+						</select> 
+					</div>
+					<div class="layui-input-inline layui-show-sm-inline-block">
+						<input type="text" lay-verify="required|phone|number" class="layui-input url" name="" placeholder="输入视频地址" />
+					</div>
+					<button class="layui-btn layui-btn-normal play">立即播放</button>
+				</div>
+				
+				<br />
+				<fieldset class="layui-elem-field layui-field-title">
+					<legend>视频 - 网站</legend>
+				</fieldset>
+				
+				<div class="layui-row">
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">爱奇艺</div>
+							<div class="layui-card-body">
+								<a href="http://www.iqiyi.com/" target="_blank">
+							    	<img src="img/sprite-headLogo-index.png" title="爱奇艺"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">优酷</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.youku.com/" target="_blank">
+							    	<img src="img/yk-logo-1220.png" width="" height="50" title="优酷"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">腾讯视频</div>
+							<div class="layui-card-body">
+						    	<a href="http://v.qq.com/"  target="_blank">
+							    	<img src="img/qqlogo.png" width="" height="50" title="腾讯视频"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">芒果TV</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.mgtv.com/" target="_blank">
+							    	<img src="img/hunantvlogo.png"  height="" title="芒果TV"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="layui-row">
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">搜狐视频</div>
+							<div class="layui-card-body">
+						    	<a href="http://tv.sohu.com/" target="_blank">
+							    	<img src="img/souhulogo.gif" width="" height="50" title="搜狐视频"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">PPTV聚力</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.pptv.com/" target="_blank">
+							    	<img src="img/pptv.png"  height="50" title="PPTV聚力"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">乐视TV</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.le.com/" target="_blank">
+							    	<img src="img/letv.jpg"  height="" title="乐视TV"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">土豆视频</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.tudou.com/" target="_blank">
+							    	<img src="img/tudoulogo.png"  height="50" title="土豆视频"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="layui-row">
+					<div class="layui-col-md3">
+						<div class="layui-card">
+							<div class="layui-card-header">1905</div>
+							<div class="layui-card-body">
+						    	<a href="http://www.1905.com/" target="_blank">
+							    	<img src="img/1905logo.png"  height="50" title="1905"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="layui-main layui-text" style="text-align: center;">
+				<div class="layui-row">
+					<hr />
+					<p>声明：本站不进行任何资源存储，只提供影视解析服务，所有接口均来自互联网，请勿用于任何商业用途。如有侵权请，<a href="javascript:;">联系我们</a></p>
+					<p>如果你用尽了办法都解析不出来你想要看的视频，那就去找资源吧</p> 
+					<p>友情链接:BDsee电影下载网 <a href="http://www.bdsee.cn" target="_blank">http://www.bdsee.cn </a></p>
+					<p>&copy; Copyright 2018 riley. All Rights Reserved. </p>
+				</div>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="layui/layui.js" ></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
